@@ -91,6 +91,7 @@
     </div>
 
     <!-- Scripts -->
+    <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
     <script src="/js/app.js"></script>
 </body>
 </html>

@@ -31,6 +31,10 @@ class ComposerStaticInita4b62f5f71775428d0d4bbdb2c074169
         array (
             'Webmozart\\Assert\\' => 17,
         ),
+        'U' => 
+        array (
+            'Unisharp\\Ckeditor\\' => 18,
+        ),
         'T' => 
         array (
             'TijsVerkoyen\\CssToInlineStyles\\' => 31,
@@ -124,6 +128,10 @@ class ComposerStaticInita4b62f5f71775428d0d4bbdb2c074169
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'Unisharp\\Ckeditor\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/unisharp/laravel-ckeditor',
         ),
         'TijsVerkoyen\\CssToInlineStyles\\' => 
         array (
@@ -336,7 +344,9 @@ class ComposerStaticInita4b62f5f71775428d0d4bbdb2c074169
     );
 
     public static $classMap = array (
+        'CreateArticlesTable' => __DIR__ . '/../..' . '/database/migrations/2020_05_16_120227_create_articles_table.php',
         'CreateCategoriesTable' => __DIR__ . '/../..' . '/database/migrations/2020_05_14_112436_create_categories_table.php',
+        'CreateCategoryableTable' => __DIR__ . '/../..' . '/database/migrations/2020_05_18_063646_create_categoryable_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',

@@ -7,6 +7,12 @@
 
 require('./bootstrap');
 
+// CKEDITOR
+$( document ).ready(function() {
+  CKEDITOR.replace( 'description_short' );
+  CKEDITOR.replace( 'description' );
+});
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
