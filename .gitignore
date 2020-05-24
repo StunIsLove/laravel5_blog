@@ -1,5 +1,4 @@
 /public/storage
 /storage/*.key
-Homestead.json
 Homestead.yaml
 .env
