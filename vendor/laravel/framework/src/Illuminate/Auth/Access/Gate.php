@@ -122,7 +122,7 @@ class Gate implements GateContract
      *
      * @param  string  $name
      * @param  string  $class
-     * @param  array|null   $abilities
+     * @param  array   $abilities
      * @return $this
      */
     public function resource($name, $class, array $abilities = null)
@@ -151,7 +151,7 @@ class Gate implements GateContract
     protected function buildAbilityCallback($ability, $callback)
     {
         return function () use ($ability, $callback) {
-            [$class, $method] = Str::parseCallback($callback);
+            list($class, $method) = Str::parseCallback($callback);
 
             $policy = $this->resolvePolicy($class);
 

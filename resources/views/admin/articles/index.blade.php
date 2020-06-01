@@ -25,7 +25,7 @@
           <td>{{$article->title}}</td>
           <td>{{$article->published}}</td>
           <td class="text-right">
-            <form onsubmit="if(confirm('Удалить материал?')){ return true }else{ return false }" action="{{route('admin.article.destroy', $article)}}" method="post">
+            <form onsubmit="if(confirm('Удалить?')){ return true }else{ return false }" action="{{route('admin.article.destroy', $article)}}" method="post">
               <input type="hidden" name="_method" value="DELETE">
               {{ csrf_field() }}
 
@@ -41,6 +41,15 @@
         </tr>
       @endforelse
     </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">
+          <ul class="pagination pull-right">
+            {{$articles->links()}}
+          </ul>
+        </td>
+      </tr>
+    </tfoot>
   </table>
 </div>
 

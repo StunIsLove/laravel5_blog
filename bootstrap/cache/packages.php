@@ -1,13 +1,23 @@
 <?php return array (
-  'davejamesmiller/laravel-breadcrumbs' => 
+  'fideloper/proxy' => 
   array (
     'providers' => 
     array (
-      0 => 'DaveJamesMiller\\Breadcrumbs\\BreadcrumbsServiceProvider',
+      0 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
     ),
-    'aliases' => 
+  ),
+  'laravel/tinker' => 
+  array (
+    'providers' => 
     array (
-      'Breadcrumbs' => 'DaveJamesMiller\\Breadcrumbs\\Facades\\Breadcrumbs',
+      0 => 'Laravel\\Tinker\\TinkerServiceProvider',
+    ),
+  ),
+  'nesbot/carbon' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Carbon\\Laravel\\ServiceProvider',
     ),
   ),
 );

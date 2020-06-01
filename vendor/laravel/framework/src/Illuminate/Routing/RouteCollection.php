@@ -183,13 +183,13 @@ class RouteCollection implements Countable, IteratorAggregate
      * Determine if a route in the array matches the request.
      *
      * @param  array  $routes
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\http\Request  $request
      * @param  bool  $includingMethod
      * @return \Illuminate\Routing\Route|null
      */
     protected function matchAgainstRoutes(array $routes, $request, $includingMethod = true)
     {
-        [$fallbacks, $routes] = collect($routes)->partition(function ($route) {
+        list($fallbacks, $routes) = collect($routes)->partition(function ($route) {
             return $route->isFallback;
         });
 
